@@ -4,9 +4,10 @@
 /* додатковий колір фону #F5F4FA */
 /* колір геро и футера #2F303A */
 /* колір контактів футера rgba(255, 255, 255, 0.6); */
-/*  */
+/* колір логотип, кнопка, підсвітка #2196F3*/
+/* колір кнопка герой-активна #188CE8 */
 
-/* призначенн змінних */
+/* призначення змінних */
 :root {
   --primary-text-color: #757575;
   --title-text-color: #212121;
@@ -16,6 +17,7 @@
   --hero-footer-bgc: #2f303a;
   --contacts-footer-colors: rgba(255, 255, 255, 0.6);
   --secondary-bgc: #f5f4fa;
+  --button-activ-color: #188ce8;
 }
 
 /* body */
@@ -30,10 +32,34 @@ body {
 .background {
   background-color: var(--secondary-bgc);
 }
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
 .list {
   list-style: none;
+  margin: 0;
+  padding: 0;
 }
 
+img {
+  display: block;
+}
+
+.container {
+  width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+  outline: 2px solid red;
+}
 .visually-hidden {
   position: absolute;
   white-space: nowrap;
@@ -105,6 +131,7 @@ body {
 
 .hero-section {
   background-color: var(--hero-footer-bgc);
+  padding: 200px 0;
 }
 
 .hero-title {
@@ -115,8 +142,10 @@ body {
   line-height: calc(60 / 44);
   text-align: center;
   letter-spacing: 0.06em;
-
   text-transform: uppercase;
+
+  width: 696px;
+  padding-bottom: 30px;
 }
 
 .hero-button {
@@ -128,13 +157,31 @@ body {
   font-weight: 700;
   font-size: 16px;
   line-height: calc(30 / 16);
-  display: flex;
+  /* display: flex; */
   align-items: center;
   text-align: center;
   letter-spacing: 0.06em;
+
+  min-width: 216px;
+  min-height: 50px;
+  padding: 10px 32px;
+  border-radius: 4px;
 }
 
-/* Стилі заголовків */
+.hero-button:hover,
+.hero-button:focus {
+  background-color: var(--button-activ-color);
+}
+
+/* Main */
+
+.section {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+.not-padding {
+  padding-top: 0;
+}
 .section-title {
   color: var(--title-text-color);
 
@@ -143,6 +190,8 @@ body {
   line-height: calc(42 / 36);
   text-align: center;
   letter-spacing: 0.03em;
+
+  margin-bottom: 50px;
 }
 
 .feature-title {
@@ -153,9 +202,15 @@ body {
   line-height: calc(16 / 14);
   letter-spacing: 0.03em;
   text-transform: uppercase;
+
+  margin-bottom: 10px;
 }
 
-.tem-title {
+.feature-text {
+  width: 270px;
+}
+
+.team-title {
   color: var(--title-text-color);
 
   font-weight: 500;
