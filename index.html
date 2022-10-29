@@ -5,10 +5,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Студія</title>
+    <!-- Стилі -->
     <link
       href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
       rel="stylesheet"
     />
+    <!-- Нормалізатор -->
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
@@ -16,6 +18,7 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+    <!-- Стилі -->
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body>
@@ -96,60 +99,82 @@
           <h2 class="section-title">Наша команда</h2>
           <ul class="list">
             <li>
-              <img
-                src="./images/product-designer.jpg"
-                alt="продукт дизайнер"
-                width="270"
-                height="260"
-              />
-              <h3 class="team-title">Ігор Дем'яненко</h3>
-              <p class="text" lang="en">Product Designer</p>
+              <div class="team-card">
+                <img
+                  src="./images/product-designer.jpg"
+                  alt="продукт дизайнер"
+                  width="270"
+                  height="260"
+                />
+                <div class="under-foto">
+                  <h3 class="team-title">Ігор Дем'яненко</h3>
+                  <p class="text" lang="en">Product Designer</p>
+                </div>
+              </div>
             </li>
             <li>
-              <img
-                src="./images/frontend-developer.jpg"
-                alt="фронтенд розробник"
-                width="270"
-                height="260"
-              />
-              <h3 class="team-title">Ольга Рєпіна</h3>
-              <p class="text" lang="en">Frontend Developer</p>
+              <div class="team-card">
+                <img
+                  src="./images/frontend-developer.jpg"
+                  alt="фронтенд розробник"
+                  width="270"
+                  height="260"
+                />
+                <div class="under-foto">
+                  <h3 class="team-title">Ольга Рєпіна</h3>
+                  <p class="text" lang="en">Frontend Developer</p>
+                </div>
+              </div>
             </li>
             <li>
-              <img src="./images/marketing.jpg" alt="маркетолог" width="270" height="260" />
-              <h3 class="team-title">Микола Тарасов</h3>
-              <p class="text" lang="en">Marketing</p>
+              <div class="team-card">
+                <img src="./images/marketing.jpg" alt="маркетолог" width="270" height="260" />
+                <div class="under-foto">
+                  <h3 class="team-title">Микола Тарасов</h3>
+                  <p class="text" lang="en">Marketing</p>
+                </div>
+              </div>
             </li>
             <li>
-              <img src="./images/ul-designer.jpg" alt="ул дизайнер" width="270" height="260" />
-              <h3 class="team-title">Михайло Єрмаков</h3>
-              <p class="text" lang="en">UI Designer</p>
+              <div class="team-card">
+                <img src="./images/ul-designer.jpg" alt="ул дизайнер" width="270" height="260" />
+                <div class="under-foto">
+                  <h3 class="team-title">Михайло Єрмаков</h3>
+                  <p class="text" lang="en">UI Designer</p>
+                </div>
+              </div>
             </li>
           </ul>
         </div>
       </section>
     </main>
     <footer class="footer">
-      <!-- prettier-ignore -->
-      <a href="" lang="en" class="logo">Web<span class="logo-footer">Studio</span></a>
-      <address>
-        <ul class="list">
-          <li>
-            <a
-              href="https://goo.gl/maps/GXKJQdvFJzr9G8gM8"
-              target="_blank"
-              rel="noopener noreferrer nofollow"
-              class="link-addresse-footer"
-            >
-              м. Київ, бульвар Лесі Українки, 26
-            </a>
-          </li>
-          <li>
-            <a href="mailto:info@devstudio.com" class="link-contacts-footer">info@devstudio.com</a>
-          </li>
-          <li><a href="tel:+380961111111" class="link-contacts-footer">+38 096 111 11 11</a></li>
-        </ul>
-      </address>
+      <div class="container">
+        <!-- prettier-ignore -->
+        <a href="" lang="en" class="logo">Web<span class="logo-footer">Studio</span></a>
+        <address>
+          <ul class="list">
+            <li class="addresse">
+              <a
+                href="https://goo.gl/maps/GXKJQdvFJzr9G8gM8"
+                target="_blank"
+                rel="noopener noreferrer nofollow"
+                class="link-addresse-footer"
+              >
+                м. Київ, бульвар Лесі Українки, 26
+              </a>
+            </li>
+            <li class="addresse">
+              <a href="mailto:info@devstudio.com" class="link-contacts-footer"
+                >info@devstudio.com</a
+              >
+            </li>
+            <li class="addresse">
+              <a href="tel:+380961111111" class="link-contacts-footer">+38 096 111 11 11</a>
+            </li>
+          </ul>
+        </address>
+      </div>
     </footer>
   </body>
 </html>
