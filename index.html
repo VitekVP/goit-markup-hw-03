@@ -22,20 +22,22 @@
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body>
-    <!-- Шапка -->
+    <!-- HEADER -->
     <header>
-      <div class="container">
+      <div class="header-container container">
         <!-- prettier-ignore -->
         <a href="" lang="en" class="logo">Web<span class="logo-header">Studio</span></a>
-        <nav>
+        <nav class="header-nav">
           <ul class="list site-nav">
-            <li><a href="" class="link current">Студія</a></li>
-            <li><a href="./portfolio.html" class="link">Портфоліо</a></li>
-            <li><a href="" class="link">Контакти</a></li>
+            <li><a href="" class="header-link link current">Студія</a></li>
+            <li><a href="./portfolio.html" class="header-link link">Портфоліо</a></li>
+            <li><a href="" class="header-link link">Контакти</a></li>
           </ul>
         </nav>
-        <a href="mailto:info@devstudio.com" class="link-contacts">info@devstudio.com</a>
-        <a href="tel:+380961111111" class="link-contacts">+38 096 111 11 11</a>
+        <div class="header-group">
+          <a href="mailto:info@devstudio.com" class="link-contacts">info@devstudio.com</a>
+          <a href="tel:+380961111111" class="link-contacts">+38 096 111 11 11</a>
+        </div>
       </div>
     </header>
     <main>
@@ -44,11 +46,11 @@
         <h1 class="hero-title">Ефективні рішення для вашого бізнесу</h1>
         <button class="hero-button">Замовити послугу</button>
       </section>
-      <!-- Принципи роботи -->
+      <!-- Особливості роботи -->
       <section class="section">
         <div class="container">
           <h2 class="section-title visually-hidden">корпоративні принципи роботи компанії</h2>
-          <ul class="list">
+          <ul class="list feature-list">
             <li>
               <h3 class="feature-title">УВАГА ДО ДЕТАЛЕЙ</h3>
               <p class="feature-text">
@@ -80,7 +82,7 @@
       <section class="section not-padding">
         <div class="container">
           <h2 class="section-title">Чим ми займаємося</h2>
-          <ul class="list">
+          <ul class="list img-box">
             <li>
               <img src="./images/img-gallery1.jpg" alt="наша робота" width="370" height="294" />
             </li>
@@ -97,7 +99,7 @@
       <section class="section background">
         <div class="container">
           <h2 class="section-title">Наша команда</h2>
-          <ul class="list">
+          <ul class="list team-list">
             <li>
               <div class="team-card">
                 <img
